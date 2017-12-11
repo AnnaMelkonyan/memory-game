@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+<body>
+    
+    <div class="wrap  lime accent-3">
+        <div class="game">
+            <div class="firstPage row" id="back">
+                <h1><a  style="width: 50%; height: 50px; margin-left: 25%"  class="btn btn-floating pulse center  orange lighten-1" >Memory Game</a></h1>
+                <h5 class="center-align col s8 offset-s2 headeer">Click on a card to reveal it. Use your memory to click on another card with a matching image. Try to find all of the pairs. Choose level. </h5>
+                <br>
+                <div class="carousel"  >
+                    <a class="carousel-item" onclick="firstLevel()" href="#one!"><img src="https://ahc-interprofessional-education.sites.medinfo.ufl.edu/files/2014/05/pet-sitting-pg.jpg"></a>
+                    <a class="carousel-item" onclick="secondLevel()"  href="#two!"><img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/11/sakura-wallpaper-desktop.jpg"></a>
+                    <a class="carousel-item" onclick="thirdLevel()" href="#three!"><img src="https://www.primalhn.com/wp-content/uploads/2017/02/fruits.jpg"></a>
+                </div>
+      
+                
+            </div>
+            
+        </div>
+        <div class="modal-overlay">
+            <div class="modal">
+                <h2 class="winner lime-text text-accent-3">You Win!</h2>
+                <button class="restart lime accent-3">Play Again?</button>
+            </div>
+        </div>
+   
+    </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/game.js"></script>
+  
+</body>
+
+</html>
