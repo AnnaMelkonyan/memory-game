@@ -59,7 +59,7 @@ var Memory = {
 			Memory.showModal();
 			Memory.$game.fadeOut();
 		}, 1000);
-
+	
 		
 		
 	},
@@ -100,8 +100,8 @@ var Memory = {
 		frag += '<div class="card" data-id="'+ v.id +'"><div class="inside">\
 				<div class="front"><img src="'+ v.img +'"\
 				alt="'+ v.name +'" /></div>\
-				<div class="back"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/codepen-logo.png"\
-				alt="Codepen" /></div></div>\
+				<div class="back">\
+				</div></div>\
 				</div>';
 		});
 	

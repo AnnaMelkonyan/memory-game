@@ -146,8 +146,8 @@ body {
   display: block;
   font-size: 30px;
   border: none;
-  background: #4d4d4d;
-  background: linear-gradient(#4d4d4d, #222);
+ 
+ 
   border: 1px solid #222;
   border-radius: 5px;
   color: white;
@@ -210,4 +210,9 @@ body {
   color: orange;
   font-size: 40px;
   text-shadow: 2px 2px 2px grey;
+}
+
+.d{
+  height: 200px;
+  cursor: pointer;
 }

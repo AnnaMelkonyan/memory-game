@@ -16,24 +16,52 @@
                 <h1><a  style="width: 50%; height: 50px; margin-left: 25%"  class="btn btn-floating pulse center  orange lighten-1" >Memory Game</a></h1>
                 <h5 class="center-align col s8 offset-s2 headeer">Click on a card to reveal it. Use your memory to click on another card with a matching image. Try to find all of the pairs. Choose level. </h5>
                 <br>
-                <div class="carousel"  >
-                    <a class="carousel-item" onclick="firstLevel()" href="#one!"><img src="https://ahc-interprofessional-education.sites.medinfo.ufl.edu/files/2014/05/pet-sitting-pg.jpg"></a>
-                    <a class="carousel-item" onclick="secondLevel()"  href="#two!"><img src="http://hddesktopwallpapers.in/wp-content/uploads/2015/11/sakura-wallpaper-desktop.jpg"></a>
-                    <a class="carousel-item" onclick="thirdLevel()" href="#three!"><img src="https://www.primalhn.com/wp-content/uploads/2017/02/fruits.jpg"></a>
+            </div>  
+            <div class="row">
+                <div class="col s4">
+                    <img class="col s12 d" src="img/1.png"  onclick="firstLevel()" href="#one!">
+                    <h4 class="col s12  orange-text text-lighten-1">First Level</h4>
+                    <p class="col s12 grey-text">Animals</p>
                 </div>
-      
-                
+                <div class="col  s4">
+                    <img class="col s12 d" src="img/2.png"  onclick="secondLevel()"  href="#two!">
+                    <h4 class="col s12  orange-text text-lighten-1">Second Level</h4>
+                    <p class="col s12 grey-text">Flowers</p>
+                </div>
+                <div class="col s4">
+                    <img class="col s12 d" src="img/3.png"  onclick="thirdLevel()" href="#three!">
+                    <h4 class="col s12  orange-text text-lighten-1">Third Level</h4>
+                    <p class="col s12 grey-text">Fruits</p>
+                </div>
             </div>
-            
         </div>
+       
+    </div>
+    
+       
         <div class="modal-overlay">
             <div class="modal">
                 <h2 class="winner lime-text text-accent-3">You Win!</h2>
-                <button class="restart lime accent-3">Play Again?</button>
+                <!-- <button class="restart lime accent-3" onclick="">Play Again?</button> -->
+                <div class="container">
+                    <div class="row">
+                        <button class="restart col s4 lime accent-3" onclick="firstLevel()"  href="#one!">First level</button>
+                        <div class="col s4"></div>
+                        <button class="restart col s4 lime accent-3" onclick="thirdLevel()"  href="#three!">Third Level</button>
+                        <div class="col s4"></div>
+                        <button class="restart col s4 lime accent-3" onclick="secondLevel()"  href="#two!">Second level</button>
+                        <div class="col s4"></div>
+                    </div>   
+                </div>
+                 
             </div>
         </div>
    
-    </div>
+
+  
+  
+
+
   <script src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
